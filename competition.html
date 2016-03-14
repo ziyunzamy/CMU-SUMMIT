@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CMU-SUMMIT Register</title>
+    <title>CMU-SUMMIT</title>
 
-<!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
@@ -54,7 +54,7 @@
                         <a href="agenda.html">AGENDA</a>
                     </li>
                     <li class="dropdown">
-                            <a href="#" class="active" class="dropdown-toggle" data-toggle="dropdown">SPEAKERS <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPEAKERS <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="opening_remarks.html">Opening Remarks</a></li>
                                 <li><a href="keynote_speakers.html">Keynote Speakers</a></li>
@@ -72,7 +72,7 @@
                             </ul>
                         </li>
                     <li>
-                        <a class="page-scroll" href="competition.html">COMPETITION</a>
+                        <a class="active" href="#competition">COMPETITION</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="collaborators.html">COLLABRATORS</a>
@@ -93,71 +93,22 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <section id="contact">
-        <div class="container">
-            <div class="row">
+    
+    <!-- Competiton Section -->
+    <section id="competition">
+    <div class="container">
+        <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Register</h2>
+                    <h2 class="section-heading">Competition</h2>
+                    <hr/>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                <select class="form-control" id="company" required data-validation-required-message="Please select your interested company">
-                                    <option selected>Most Interested Company</option>
-                                    <option value="1">Cheetah Mobile</option>
-                                    <option value="2">DJI</option>
-                                    <option value="3">EHANG</option>
-                                    <option value="4">Liaoyuan</option>
-                                    <option value="5">ROBOTERRA</option>
-                                    <option value="6">Smarking</option>
-                                    <option value="7">Tezign</option>
-                                    <option value="8">Trust Look</option>
-                                    <option value="9">Westlake Ventures</option>
-                                    <option value="10">Idea Bulb Ventures</option>
-                                    <option value="11">Innospring</option>
-                                </select>
-                                </div>
-
-                                <div class="form-group" id="role" required data-validation-required-message="Please select your role">
-                                <select class="form-control" >
-                                    <option selected>I am coming as a</option>
-                                    <option value="1">Student</option>
-                                    <option value="2">Company</option>
-                                    <option value="3">Recruiter</option>
-                                </select>
-                                </div>
-
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Register</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        </div>
+        <div class="row">
+        <img src="img/CMU-New Venture Competition.png" class="img-responsive" alt="">
+        </div>
         </div>
     </section>
-    <footer>
+     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -185,12 +136,11 @@
         </div>
     </footer>
 
-    
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -203,7 +153,5 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-
-
 </body>
 </html>
