@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CMU-SUMMIT</title>
+    <title>CMU-SUMMIT Register</title>
 
-    <!-- Bootstrap Core CSS -->
+<!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
@@ -54,7 +54,7 @@
                         <a href="agenda.html">AGENDA</a>
                     </li>
                     <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPEAKERS <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="active" class="dropdown-toggle" data-toggle="dropdown">SPEAKERS <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="opening_remarks.html">Opening Remarks</a></li>
                                 <li><a href="keynote_speakers.html">Keynote Speakers</a></li>
@@ -72,7 +72,7 @@
                             </ul>
                         </li>
                     <li>
-                        <a class="active" href="#competition">COMPETITION</a>
+                        <a class="page-scroll" href="competition.html">COMPETITION</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="collaborators.html">COLLABRATORS</a>
@@ -97,22 +97,92 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    
-    <!-- Competiton Section -->
-    <section id="competition">
-    <div class="container">
-        <div class="row">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Competition</h2>
-                    <hr/>
+                    <h2 class="section-heading">Registration for Job Fair</h2>
                 </div>
-        </div>
-        <div class="row">
-        <img src="img/CMU-New Venture Competition.png" class="img-responsive" alt="">
-        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                        <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+
+                        <div class="col-lg-12 text-center">
+                    <h4 class="section-heading">What Companies are you interested in?</h4>
+                </div>
+                                <div class="form-group">
+                                 <label><input id="cheetahMobile" type="checkbox" value="" >&ensp;&ensp;&ensp;猎豹移动&ensp;Cheetah Mobile</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="dji" type="checkbox" value="">&ensp;&ensp;&ensp;大疆&ensp;DJI</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="ehang" type="checkbox" value="">&ensp;&ensp;&ensp;亿航&ensp;EHANG</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="liaoyuan" type="checkbox" value="">&ensp;&ensp;&ensp;燎原&ensp;Liaoyuan</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="roboterra" type="checkbox" value="">&ensp;&ensp;&ensp;萝卜太辣&ensp;ROBOTERRA</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="smarking" type="checkbox" value="">&ensp;&ensp;&ensp;Smarking</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="trustLook" type="checkbox" value="">&ensp;&ensp;&ensp;Trust Look</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="tegizn" type="checkbox" value="">&ensp;&ensp;&ensp;特赞&ensp;Tezign</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="westlakeVentures" type="checkbox" value="">&ensp;&ensp;&ensp;杭州硅谷创新中心&ensp;Westlake Ventures</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="collegeDaily" type="checkbox" value="">&ensp;&ensp;&ensp;北美留学生日报&ensp;College Daily</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="innospring" type="checkbox" value="">&ensp;&ensp;&ensp;创源&ensp;Innospring</label>
+                                </div>
+                                <div class="form-group">
+                                 <label><input id="ideaBulbVentures" type="checkbox" value="">&ensp;&ensp;&ensp;创意工场&ensp;Idea Bulb Ventures</label>
+                                </div>
+                                <div class="form-group">
+                                <label class="control-label">Upload Your Resume</label>
+                                <input id="input-2" name="input2[]" type="file" class="file" multiple data-show-upload="false" data-show-caption="true">
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-5"></div>
+                            <div class="col-lg-4 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Register</button>
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
-     <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -140,11 +210,12 @@
         </div>
     </footer>
 
+    
     <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -153,9 +224,11 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/register_job.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+
 </body>
 </html>

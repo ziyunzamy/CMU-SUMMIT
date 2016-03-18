@@ -11,9 +11,6 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var company = $("select#company").val();
-            var role = $("select#role").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -26,9 +23,6 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message,
-                    company: company,
-                    role: role
                 },
                 cache: false,
                 success: function() {

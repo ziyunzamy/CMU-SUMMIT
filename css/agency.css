@@ -4,7 +4,12 @@ body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Aria
 p{font-size:14px;line-height:1.75}
 p.large{font-size:16px}
 a,a:hover,a:focus,a:active,a.active{outline:0}
-a{color:#8B0000}a:hover,a:focus,a:active,a.active{color:#8B0000}
+a{color:#8B0000;
+	font-family: "Roboto";
+	font-size: 15px;
+	text-align: left;
+}
+a:hover,a:focus,a:active,a.active{color:#8B0000,font-family: "Roboto";font-size: 15px;text-align: left;}
 h1,h2,h3,h4,h5,h6{font-family:"Roboto",sans-serif;font-weight:400}
 .img-centered{margin:0 auto}
 .bg-light-gray{background-color:#FFF}
@@ -30,8 +35,8 @@ h1,h2,h3,h4,h5,h6{font-family:"Roboto",sans-serif;font-weight:400}
 .btn-primary[disabled].active,fieldset[disabled] 
 .btn-primary.active{background-color:#8B0000;border-color:#8B0000}
 h4 {
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 8px;
+	padding-bottom: 6px;
 }
 .btn-primary 
 .badge{color:#8B0000;background-color:#fff}
@@ -88,6 +93,7 @@ fieldset[disabled] .btn-xl,
 .navbar-default .nav li a{font-family:"Roboto",sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:0.54px;color:#fff}
 .navbar-default .nav li a:hover{color:#8B0000;outline:0}
 .navbar-default .nav li a:focus{color:#FFF;outline:0}
+
 .navbar-default .navbar-nav>.active>a{border-radius:0;color:#fff;background-color:#8B0000}
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus{color:#fff;background-color:#8B0000}
@@ -272,11 +278,14 @@ left:40px;margin-left:-1.5px}.timeline>li{margin-bottom:50px;
 	.team-member{text-align:center;margin-bottom:50px}
 	.team-member img{margin:0 auto;border:7px solid #fff}
 	.team-member h4{margin-top:25px;margin-bottom:0;text-transform:none}
-	.team-member p{margin-top:0}aside.clients img{margin:50px auto}section#contact{background-color:#222;background-image:url(../img/map-image.png);background-position:center;background-repeat:no-repeat}section#contact .section-heading{color:#fff}section#contact .form-group{margin-bottom:25px}
+	.team-member p{margin-top:0}aside.clients img{margin:50px auto}section#contact{background-color:#222;background-image:url(../img/map-image.png);background-position:center;background-repeat:no-repeat}
+	section#contact .section-heading{color:#fff}
+	section#contact .form-group{margin-bottom:25px}
 /*	section#contact .form-group input,
 	section#contact .form-group select.form-control{padding:20px}
 */	section#contact .form-group input.form-control{height:auto}
 	section#contact .form-group textarea.form-control{height:236px}
+	section#contact .form-group label{color: #FFF; padding-left: 20px; font-family: "Roboto";font-size: 20px;}
 	section#contact .form-control:focus{border-color:#8B0000;box-shadow:none}
 	section#contact ::-webkit-input-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#bbb}
 	section#contact :-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#bbb}
@@ -310,6 +319,10 @@ body{webkit-tap-highlight-color:#8B0000}
 
 .events .col-md-4 h4 {
 	font-size: 32px;
+	text-align: left;
+}
+.events .col-md-4 h3 {
+	font-size: 25px;
 	text-align: left;
 }
 .events .col-md-4{
@@ -389,3 +402,42 @@ body{webkit-tap-highlight-color:#8B0000}
 	height: 650px;
 	position: relative;
 }
+
+#opening .col-lg-8 h3{
+	text-align: left;
+	font-family: "Roboto";
+	font-size: 30px;
+}
+#opening .col-lg-8 p{
+	float: left;
+	font-family: "Roboto";
+	font-size: 15px;
+	line-height: 20.1px;
+
+}
+#opening a {
+	font-family: "Roboto";
+	font-size: 15px;
+	line-height: 20.1px;
+	text-align: left;
+
+}
+#keynote .text-muted {
+	text-align: center;
+}
+
+#collabrators h4{
+	text-align: left;
+}
+
+#collabrators .img-responsive{
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(200,200,200);
+	box-shadow: 10px 10px 5px #888888;
+
+}
+
+
+
+

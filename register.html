@@ -77,9 +77,13 @@
                     <li>
                         <a class="page-scroll" href="collaborators.html">COLLABRATORS</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="career.html">CAREER</a>
-                    </li>
+                    <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREER <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                 <li><a href="career.html">Recruiters</a></li>
+                                <li><a href="job_fair.html">Jobfair</a></li>
+                            </ul>
+                        </li>
                     <li>
                         <a class="page-scroll" href="#resources">RESOURCES</a>
                     </li>
@@ -97,13 +101,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Register</h2>
+                    <h2 class="section-heading">General Registration</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
+                        <div class="col-md-3"></div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
@@ -118,39 +123,14 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                <select class="form-control" id="company" required data-validation-required-message="Please select your interested company">
-                                    <option selected>Most Interested Company</option>
-                                    <option value="1">Cheetah Mobile</option>
-                                    <option value="2">DJI</option>
-                                    <option value="3">EHANG</option>
-                                    <option value="4">Liaoyuan</option>
-                                    <option value="5">ROBOTERRA</option>
-                                    <option value="6">Smarking</option>
-                                    <option value="7">Tezign</option>
-                                    <option value="8">Trust Look</option>
-                                    <option value="9">Westlake Ventures</option>
-                                    <option value="10">Idea Bulb Ventures</option>
-                                    <option value="11">Innospring</option>
-                                </select>
-                                </div>
-
-                                <div class="form-group" id="role" required data-validation-required-message="Please select your role">
-                                <select class="form-control" >
-                                    <option selected>I am coming as a</option>
-                                    <option value="1">Student</option>
-                                    <option value="2">Company</option>
-                                    <option value="3">Recruiter</option>
-                                </select>
-                                </div>
-
-                            </div>
+                            <div class="col-md-3"></div>
                             <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
+                            <div class="col-md-5"></div>
+                            <div class="col-lg-4 text-center">
                                 <div id="success"></div>
                                 <button type="submit" class="btn btn-xl">Register</button>
                             </div>
+                            <div class="col-md-3"></div>
                         </div>
                     </form>
                 </div>
@@ -199,7 +179,7 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/register.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
