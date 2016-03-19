@@ -94,21 +94,26 @@ fieldset[disabled] .btn-xl,
 .navbar-default .nav li a:hover{color:#8B0000;outline:0}
 .navbar-default .nav li a:focus{color:#FFF;outline:0}
 
-.navbar-default .navbar-nav>.active>a{border-radius:0;color:#fff;background-color:#8B0000}
+.navbar-default .navbar-nav>.active>a{border-radius:3;color:#fff;background-color:#8B0000}
+.navbar-default .navbar-nav .active{border-radius:3;color:#fff;background-color:#8B0000}
+.navbar-default .navbar-nav .dropdown .dropdown-menu .active{border-radius:3;color:#fff;background-color:#8B0000}
 .navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus{color:#fff;background-color:#8B0000}
+.navbar-default .navbar-nav>.active>a:focus{border-radius:3;color:#fff;background-color:#8B0000}
 
 .navbar-default .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-default .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-default .navbar-nav .dropdown-menu > li.active > a {
   background-color: #8B0000;
   color: #fff;
+  display: block;
 }
 
-.dropdown-menu {
-  margin-top: -1px;
-  min-width: 180px;
-}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -1px;
+    min-width: 180px;
+ }
+
 .navbar-default .navbar-nav .dropdown-menu {
   background-color: rgba(0,0,0,.85);
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -244,6 +249,7 @@ left:40px;margin-left:-1.5px}.timeline>li{margin-bottom:50px;
 	.timeline>li.timeline-inverted>.timeline-panel:after{border-left-width:0;border-right-width:14px;left:-14px;right:auto}
 	.timeline>li:last-child{margin-bottom:0}
 	.timeline .timeline-heading h4{margin-top:0;color:inherit;padding-bottom: 5px;}
+	.timeline .timeline-heading h5{font-size:30px;margin-top:0;color:inherit;padding-bottom: 5px;}
 	.timeline .timeline-heading h4.subheading{text-transform:none;padding-top: 5px;}
 	.timeline .timeline-body>p,.timeline .timeline-body>ul{margin-bottom:0}
 
@@ -291,12 +297,24 @@ left:40px;margin-left:-1.5px}.timeline>li{margin-bottom:50px;
 	section#contact :-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#bbb}
 	section#contact ::-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#bbb}
 	section#contact :-ms-input-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#bbb}
-	section#contact .text-danger{color:#e74c3c}footer{padding:25px 0;text-align:center}
-	footer span.copyright{line-height:40px;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;text-transform:none}
-	footer ul.quicklinks{margin-bottom:0;line-height:40px;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;text-transform:none}
+	section#contact .text-danger{color:#e74c3c}
+
+
+	footer{padding:25px 0;text-align:center;background: black;}
+	footer span.copyright{line-height:40px;
+		font-family: "Roboto";
+		color: #FFF;
+		text-transform:uppercase;
+	text-transform:none}
+	footer ul.quicklinks{margin-bottom:0;line-height:40px;
+		font-family: "Roboto";
+		text-transform:uppercase;text-transform:none}
+
+	footer h5 {color: #FFF;}
 	ul.social-buttons{margin-bottom:0}ul.social-buttons li a{display:block;background-color:#222;height:40px;width:40px;border-radius:100%;font-size:20px;line-height:40px;color:#fff;outline:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active{background-color:#8B0000}.btn:focus,.btn:active,.btn.active,.btn:active:focus{outline:0}
 
-
+	footer a:hover,a:focus,a:active,a.active{color:#8B0000;}
+	footer h5:hover{color:#8B0000;}
 
 
 .portfolio-modal .modal-content{border-radius:0;background-clip:border-box;-webkit-box-shadow:none;box-shadow:none;border:0;min-height:100%;padding:100px 0;text-align:center}
@@ -399,7 +417,7 @@ body{webkit-tap-highlight-color:#8B0000}
 
 .portfolio-item{
 	padding-bottom: 50px;
-	height: 650px;
+	height: 530px;
 	position: relative;
 }
 
@@ -438,6 +456,21 @@ body{webkit-tap-highlight-color:#8B0000}
 
 }
 
+#career .img-responsive{
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(200,200,200);
+	box-shadow: 10px 10px 5px #888888;
+
+}
+
+#panel .img-responsive {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(200,200,200);
+	box-shadow: 10px 10px 5px #888888;
+
+}
 
 
 
