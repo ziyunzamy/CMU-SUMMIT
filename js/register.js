@@ -11,11 +11,27 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
+            var role = $("select#role").val();
+            var degree = $("select#degree").val();
+            var major = $("input#major").val();
+            var department = $("input#department").val();
+            var institution = $("input#institution").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
+            
+            console.log(name);
+            console.log(email);
+            console.log(phone);
+            console.log(role);
+            console.log(degree);
+            console.log(major);
+            console.log(department);
+            console.log(institution);
+
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",

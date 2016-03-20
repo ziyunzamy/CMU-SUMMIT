@@ -11,6 +11,9 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
+            var major = $("input#major").val();
+            var university = $("input#university").val();
+            var graduate_time = $("input#datepicker").val();
 
             var cheetahMobile = document.getElementById("cheetahMobile").checked;
             var dji = document.getElementById("dji").checked;
@@ -30,6 +33,9 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
+
+            
 
             var companies = [];
             if(cheetahMobile==true){
@@ -68,7 +74,10 @@ $(function() {
             if(ideaBulbVentures==true){
                 companies.push('ideaBulbVentures');
             }
-
+            console.log(graduate_time);
+            console.log(companies);
+            console.log(university);
+            console.log(major);
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
@@ -76,7 +85,7 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    companies: comapnies
+                    companies: companies
                 },
                 cache: false,
                 success: function() {

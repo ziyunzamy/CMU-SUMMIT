@@ -54,7 +54,7 @@
                         <a href="agenda.html">AGENDA</a>
                     </li>
                     <li class="dropdown">
-                            <a href="#" class="active" class="dropdown-toggle" data-toggle="dropdown">SPEAKERS <i class="fa fa-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPEAKERS <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="opening_remarks.html">Opening Remarks</a></li>
                                 <li><a href="keynote_speakers.html">Keynote Speakers</a></li>
@@ -121,6 +121,38 @@
                                 <div class="form-group">
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Select your current status:</label>
+                                    <select class="form-control" id="role">
+                                            <option>CMU Student</option>
+                                            <option>CMU Faculty</option>
+                                            <option>CMU Alumni</option>
+                                            <option>Non-CMU affiliate</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="degree">If you are a student, select your degree:</label>
+                                    <select class="form-control" id="degree">
+                                            <option>Undergraduate</option>
+                                            <option>Graduate</option>
+                                            <option>Doctor</option>
+                                            <option>Post Doc</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                <label for="major">If you are a student, tell us your major:</label>
+                                    <input type="major" class="form-control" placeholder="Computer Science" id="major">
+                                </div>
+
+
+                                <div class="form-group">
+                                <label for="department">If you are a faculty, tell us your department:</label>
+                                    <input type="department" class="form-control" placeholder="Tepper Business School" id="department">
+                                </div>
+                                <div class="form-group">
+                                <label for="institution">If you are not from CMU, tell us your institution:</label>
+                                    <input type="company" class="form-control" placeholder="Company" id="institution">
                                 </div>
                             </div>
                             <div class="col-md-3"></div>
