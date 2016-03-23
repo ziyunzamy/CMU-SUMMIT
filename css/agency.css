@@ -42,7 +42,7 @@ h4 {
 .badge{color:#8B0000;background-color:#fff}
 .btn-xl{color:#fff;background-color:transparent;border-color:#FFF;border-width: 2px;
 	font-family:"Roboto",sans-serif;
-	float: left;
+	float: center;
 	text-transform:uppercase;
 	font-weight:400;
 	letter-spacing: 0.77px;
@@ -196,16 +196,29 @@ header{background-image:url(../img/background.jpg);
 	-o-background-size:cover;
 	text-align:center;
 	color:#fff}
-header .caption {}
+header .caption {
+	padding-left:20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	margin-top: 100px;
+	background-color: rgba(10,10,10,0.7);}
 header .intro-text{float:right;width:100%;display:inline-block;padding-top:100px;padding-bottom:50px;margin-right: 0px;}
-header .intro-text .intro-lead-in{font-family:"Roboto",sans-serif;font-size:22px;line-height:22px;margin-bottom:25px;text-shadow:2px 2px 5px #000;}
-header .intro-text .intro-heading{font-family:"Roboto",sans-serif;font-weight:500;font-size:15px;letter-spacing: 1.16px;line-height:38px;margin-bottom:50px;text-align: center;text-shadow:2px 2px 5px #000;}
+header .intro-text .intro-lead-in{font-family:"Roboto",sans-serif;font-size:35px;line-height:22px;margin-bottom:25px;text-shadow:2px 2px 5px #000;}
+header .intro-text .intro-heading{font-family:"Roboto",sans-serif;font-weight:500;font-size:25px;letter-spacing: 1.16px;line-height:38px;margin-bottom:50px;text-align: center;text-shadow:2px 2px 5px #000;}
 
 @media (min-width:768px){
+	header .btn {float: left}
 header .intro-text{padding-top:180px;padding-bottom:200px}
-header .intro-text .intro-lead-in{font-family:"Roboto";font-weight:400;font-size:56px;letter-spacing: 2.16px;line-height:40px;margin-bottom:25px;text-align: left; text-shadow:2px 2px 5px #000;}
+header .intro-text .intro-lead-in{font-family:"Roboto";
+		font-weight:400;
+		font-size:56px;
+		letter-spacing: 2.16px;
+		line-height:40px
+		;margin-bottom:25px;text-align: left; text-shadow:2px 2px 5px #000;}
 header .intro-text .intro-heading{font-family:"Roboto", sans-serif;font-weight:300;font-size:30px;letter-spacing: 1.16px;line-height:38px;margin-bottom:50px;text-align: left;text-shadow:2px 2px 5px #000;}
-header .caption {padding-left:20px;padding-right: 20px;padding-bottom: 20px;padding-top: 10px;
+header .caption {
+	padding-left:20px;padding-right: 20px;padding-bottom: 20px;padding-top: 10px;
 	margin-top: 300px;margin-bottom:200px;background-color: rgba(10,10,10,0.7);}
 }
 header .caption h2{
@@ -218,6 +231,7 @@ header .caption p{
 section{padding:100px 0}
 section h2.section-heading{font-family:"Roboto";letter-spacing:0.93px;line-height:30px;font-size:24px;margin-top:0;margin-bottom:15px}
 section h3.section-subheading{font-size:16px;font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none;font-style:italic;font-weight:400;margin-bottom:75px}
+
 @media (min-width:768px){section{padding:150px 0}}.service-heading{margin:15px 0;text-transform:none}
 #portfolio .portfolio-item{margin:0 0 15px;right:0}
 #portfolio .portfolio-item .portfolio-link{display:block;position:relative;max-width:400px;margin:0 auto}
@@ -231,7 +245,8 @@ section h3.section-subheading{font-size:16px;font-family:"Droid Serif","Helvetic
 #portfolio .portfolio-item .portfolio-caption h4{text-transform:none;margin:0;font-family: "Roboto";font-size: 24px;line-height: 26px;font-weight: 300;letter-spacing: 5px;}
 #portfolio .portfolio-item .portfolio-caption p{font-family:"Roboto" sans-serif;font-size:16px;margin:0}
 #portfolio *{z-index:2}
-@media (min-width:767px){#portfolio .portfolio-item{margin:0 0 30px}}
+@media (min-width:767px){
+#portfolio .portfolio-item{margin:0 0 30px}}
 
 .timeline{list-style:none;padding:0;position:relative}
 .timeline:before{top:0;bottom:0;position:absolute;content:"";width:2px;
@@ -462,6 +477,13 @@ body{webkit-tap-highlight-color:#8B0000}
 	border-color: rgb(200,200,200);
 	box-shadow: 10px 10px 5px #888888;
 
+}
+#career h4{text-align: left;}
+#career .section-heading{
+	padding-top: 0px;
+}
+#career .text-muted{
+	display: block;
 }
 
 #panel .img-responsive {
